@@ -1,0 +1,48 @@
+body{
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    }
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #b33397;
+    display: inline;
+    }
+ 
+li a{
+    float: right;
+    }
+input[type=text], input[type=number] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0px 10px 0px;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    }
+b{
+    color:chocolate;
+}
+table, th, td {
+    border: 1px solid black;
+    background-color: skyblue;
+    text-align: center;
+    font-size: x-large;
+    width:max-content;
+  }
+.danger{
+    color: red;
+    text-align: center;
+}
+
+      
+      

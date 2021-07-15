@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}STUDENT DATA{% endblock %}
+
+{% block main %}
+<h1>Welcome</h1>
+<h2>Please select from below options:</h2>
+<!--student data enter-->
+<div class="center"><img style="width: 30%;" src="static/database.png" alt="database_image" />
+<div class="centered">
+    <a href="{{ url_for('Student') }}" target="_blank" rel="noopener">
+    <p style="text-align:center">ENTER STUDENT DATA   
+    </p>
+    </a></div>
+</div>
+<!--student data show-->
+<div class="center"><img style="width: 30%;" src="static/table.png" alt="table_image" />
+<div class="centered">
+    <a href="{{ url_for('student_data_show') }}" target="_blank" rel="noopener">
+    <p style="text-align:center">SHOW STUDENT DATA 
+    </p></a></div>
+</div>
+<!--student data delete-->
+<div class="center"><img style="width: 30%;" src="static/remove.jpg" alt="remove_image" />
+  <div class="centered">
+      <a href="{{ url_for('delete_data') }}" target="_blank" rel="noopener">
+      <p style="text-align:center">DELETE STUDENT DATA 
+      </p></a></div>
+  </div>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}STUDENT-DATA{% endblock %}
+
+{% block main %}
+<h1>STUDENT_DATA_FORM:</h1>
+<p>
+    <div class="container">
+        <div class="mb-3">
+          <div class="mb-4">
+            <div class="card-header">
+              <h4 class="text-center">Enter Student Marks and data:</h4>
+            </div>
+            <div class="card-body">
+              <form action="{{ url_for('Student') }}" method="post">
+                <label for="number">Enter Student Roll number:</label>
+                <input type="number" class="form-control" name="roll" id="roll" value="" required>
+                <br>
+                <label for="text">Enter Student Name:</label>
+                <input type="text" class="form-control" name="name" id="name" value="" required>
+                <br>
+                <label for="number">Student Marks for Maths:</label>
+                <input type="number" class="form-control" name="maths" id="maths" value="" required>
+                <br>
+                <label for="number">Student Marks for Physics:</label>
+                <input type="number" class="form-control" name="physics" id="physics" value="" required>
+                <br>
+                <label for="number">Student Marks for Chemistry:</label>
+                <input type="number" class="form-control" name="chemistry" id="chemistry" value="" required>
+                <br>
+                <button class="btn btn-primary btn-lg btn-block" type="submit"><b>submit</b></button>
+              </form>
+            </div>
+          </div>
+      
+        </div>
+    </div>
+    </p>
+{% endblock %}

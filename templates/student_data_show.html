@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}STUDENT DATA{% endblock %}
+
+{% block main %}
+<h1>STUDENT DATA TABLE:</h1>
+<table>
+    <tr>
+        <th>Student Name</th>
+        <th>Roll number</th>
+        <th>Math</th>
+        <th>Physics</th>
+        <th>Chemistry</th>
+        <th>Total marks</th>
+    </tr>
+   {% for data in studentdata %}
+    <tr>
+        <td>{{ data.student_name }}</td>
+        <td>{{ data.roll_no }}</td>
+        <td>{{ data.maths }}</td>
+        <td>{{ data.physics }}</td>
+        <td>{{ data.chemistry }}</td>
+        <td>{{ data.total_marks }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

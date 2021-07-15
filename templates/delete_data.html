@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}STUDENT DATA{% endblock %}
+
+{% block main %}
+<h1>STUDENT DATA DELETE:</h1>
+<div class="container">
+    <div class="mb-3">
+      <div class="mb-4">
+        <div class="card-header">
+          <h4 class="text-center">DELETE STUDENT DATA:</h4>
+        </div>
+        <div class="card-body">
+          <form action="{{ url_for('delete_data') }}" method="post">
+            <label for="number">Enter Student Roll no to delete data:</label>
+            <input type="number" class="form-control" name="roll" id="roll" value="" required>
+            <br>
+            <button class="btn btn-primary btn-lg btn-block" type="submit"><b>delete</b></button>
+          </form>
+        </div>
+      </div>
+  
+    </div>
+</div>
+</p>
+{% endblock %}
