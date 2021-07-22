@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}SIGN UP PAGE{% endblock %}
+
+{% block main %}
+    <body></br></br></br></br></br>
+        <div align="center">
+          <div align="center" class="border">
+             <div class="header">
+                <h1 class="word">Register</h1>
+             </div></br></br></br>
+            <h2 class="word">
+                <form action="{{ url_for('sign_up') }}" method="post">
+                  <div class="container">
+                    <label for="email">Email of teacher:</label>
+                    <input type="email" class="form-control" name="email" id="email" value="" required>
+                    <br>
+                    <label for="text">Teacher name:</label>
+                    <input type="text" class="form-control" name="username" id="username" value="" required>
+                    <br>
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" name="password" id="password" value="" required>
+                    <br>
+                    <button class="btn btn-primary btn-lg btn-block" type="submit"><b>sign up</b></button>
+                </form>
+            </h2>
+            <p class="bottom">Already have an account?  <a class="bottom" href="{{url_for('login')}}"> Sign In here</a></p>
+          </div>
+        </div>
+{% endblock %}

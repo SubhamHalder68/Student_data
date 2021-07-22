@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}GET STUDENT DATA{% endblock %}
+
+{% block main %}
+<br><br><br><br>
+<div class="container">
+  <div class="card-body">
+    <form action="{{ url_for('compare_data') }}" method="post">
+      <label for="number">Enter Student Roll number 1:</label>
+      <input type="number" class="form-control" name="roll1" id="roll1" value="" required>
+      <br>
+      <label for="number">Enter Student Roll number 2:</label>
+      <input type="number" class="form-control" name="roll2" id="roll2" value="" required>
+      <br>
+    <button class="btn btn-primary btn-lg btn-block" type="submit"><b>Submit roll number</b></button>
+    
+    </form>
+  </div>
+  </div>
+{% endblock %}

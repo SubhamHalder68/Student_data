@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}STUDENT DATA{% endblock %}
+
+{% block main %}
+<h1>ALLL STUDENT DATA COMPARISION:</h1>
+<br><br><br><br>
+<div class="container">
+   <table>
+      <tr>
+          <th>Student Name</th>
+          <th>Roll number</th>
+      </tr>
+     {% for i in range(l) %}
+      <tr>
+          <td>{{ names[i] }}</td>
+          <td>{{ rolls[i] }}</td>
+      </tr>
+      {% endfor %}
+</div>
+<br><br>
+<div class="container">
+   <img src={{ url}} alt="Chart" height="500" width="1000" >
+</div>
+
+{% endblock %}

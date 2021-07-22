@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}GET STUDENT DATA{% endblock %}
+
+{% block main %}
+<br><br><br><br>
+<div class="container">
+    <form action="{{ url_for('get_data') }}" method="post">
+      <label for="number">Enter Student Roll number:</label>
+      <input type="number" class="form-control" name="roll_no" id="roll_no" value="" required>
+      <br><br><br>
+      <button class="btn btn-primary btn-lg btn-block" type="submit"><b>Submit roll number</b></button>
+      </form>
+      </div>
+{% endblock %}

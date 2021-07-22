@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}STUDENT DATA{% endblock %}
+
+{% block main %}
+<h1>STUDENT DATA FOR ROLL NO {{ dshow.roll_no }}:</h1>
+<table>
+    <tr>
+        <th>Student Name</th>
+        <th>Roll number</th>
+        <th>Math</th>
+        <th>Physics</th>
+        <th>Chemistry</th>
+        <th>Total marks</th>
+        <th>Teacher name(last modified)</th>
+        <th>Student email_id</th>
+    </tr>
+    <tr>
+        <td>{{ dshow.student_name }}</td>
+        <td>{{ dshow.roll_no }}</td>
+        <td>{{ dshow.maths }}</td>
+        <td>{{ dshow.physics }}</td>
+        <td>{{ dshow.chemistry }}</td>
+        <td>{{ dshow.total_marks }}</td>
+        <td>{{ dshow.teacher_name }}</td>
+        <td>{{ dshow.student_email }}</td>
+    </tr>
+</table>
+{% endblock %}
