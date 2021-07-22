@@ -12,6 +12,7 @@
         <th>Physics</th>
         <th>Chemistry</th>
         <th>Total marks</th>
+        <th>Teacher name(last modified)</th>
     </tr>
    {% for data in studentdata %}
     <tr>
@@ -21,6 +22,7 @@
         <td>{{ data.physics }}</td>
         <td>{{ data.chemistry }}</td>
         <td>{{ data.total_marks }}</td>
+        <td>{{ data.teacher_name }}</td>
     </tr>
     {% endfor %}
 </table>

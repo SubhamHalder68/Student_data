@@ -10,8 +10,10 @@
 <body>
     <div class="container">
     <ul>  
-    <li>Student_Data</li>
-    <li><a href="{{ url_for('index') }}">HOME</a></li>
+    {% block logout %}
+    {% endblock %}
+    <li class="active"><a href="{{ url_for('logout') }}">LOGOUT</a></li>
+    <li class="active"><a href="{{ url_for('index') }}">HOME</a></li>
     </ul>
   </div>
 

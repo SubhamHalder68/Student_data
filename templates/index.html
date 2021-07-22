@@ -1,9 +1,12 @@
 {% extends 'base.html' %}
 
 {% block title %}STUDENT DATA{% endblock %}
+{% block logout %}
+<b><li class="welcome">Welcome, {{ name }}</li></b>
+{% endblock %}
 
 {% block main %}
-<h1>Welcome</h1>
+<h1><b>Welcome !</b></h1>
 <h2>Please select from below options:</h2>
 <!--student data enter-->
 <div class="center"><img style="width: 30%;" src="static/database.png" alt="database_image" />
@@ -27,4 +30,29 @@
       <p style="text-align:center">DELETE STUDENT DATA 
       </p></a></div>
   </div>
+<!--student data delete-->
+<div class="center"><img style="width: 30%;" src="static/get.png" alt="remove_image" />
+    <div class="centered">
+        <a href="{{ url_for('get_data') }}" target="_blank" rel="noopener">
+        <p style="text-align:center">GET STUDENT DATA 
+        </p></a></div>
+    </div>
+<div class="center"><img style="width: 30%;" src="static/my_plot.png" alt="remove_image" />
+    <div class="centered">
+        <a href="{{ url_for('compare_data') }}" target="_blank" rel="noopener">
+        <p style="text-align:center">COMPARE STUDENT DATA 
+        </p></a></div>
+    </div>
+<div class="center"><img style="width: 30%;" src="static/mail.jpg" alt="remove_image" />
+    <div class="centered">
+        <a href="{{ url_for('email_sent') }}" target="_blank" rel="noopener">
+        <p style="text-align:center">EMAIL_SENT 
+        </p></a></div>
+    </div>
+    <div class="center"><img style="width: 30%;" src="static/plot_all.png" alt="remove_image" />
+        <div class="centered">
+            <a href="{{ url_for('compare_all') }}" target="_blank" rel="noopener">
+            <p style="text-align:center">COMPARE ALL
+            </p></a></div>
+        </div>
 {% endblock %}
